@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/cbActivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate" />
+
+    <EditText
+        android:id="@+id/etMess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Set message! Click Set Message" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.49" >
+
+        <Button
+            android:id="@+id/btnSetMess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:paddingLeft="10dp"
+            android:text="Set Message" />
+
+        <Button
+            android:id="@+id/btnAddCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSetMess"
+            android:layout_below="@+id/btnSetMess"
+            android:layout_marginTop="32dp"
+            android:text="Add Contacts" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnAddCont"
+            android:layout_alignRight="@+id/btnSetMess"
+            android:layout_below="@+id/btnAddCont"
+            android:layout_marginTop="36dp"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSettings"
+            android:layout_alignRight="@+id/btnSettings"
+            android:layout_below="@+id/btnSettings"
+            android:layout_marginTop="39dp"
+            android:text="Exit" />
+
+    </RelativeLayout>
+
+</LinearLayout>
